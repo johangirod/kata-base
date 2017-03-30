@@ -21,7 +21,7 @@ const computeNextState = (state) => {
             const neighbourNumber = computeNeighboursNumber(state, i, j);
             nextState[i][j] =
                 neighbourNumber === 3 ||
-                (nextState[i][j] === 1 && neighbourNumber === 2);
+                (state[i][j] === 1 && neighbourNumber === 2);
         }
     }
     return nextState;
